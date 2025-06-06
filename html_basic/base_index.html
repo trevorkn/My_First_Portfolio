@@ -4,10 +4,57 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MyFirstPortfolio</title>
-
+<style>
+    .nav-list {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        background: transparent;
+        z-index: 1000;
+    }
+    .nav-button {
+        display: inline-block;
+        background-color: #333;
+        color: #f0f0f0;
+        padding: 10px 20px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 600;
+        font-family: 'Segoe UI', Sans-serif;
+        transition: background-color 0.3s ease;
+    }
+</style>
 </head>
+
 <body>
+  <header>
+    <nav>
+        <ul class="nav-list">
+            <li><a href="index.html" class="nav-button">Home</a></li>
+            <li><a href="tweets.html" class="nav-button">Tweets</a></li>
+            <li><a href="base_index.html" class="nav-button">Base Page</a></li>
+            
+            
+        </ul>
+    </nav>
+</header> 
+<main>
+<article>
 <h1>This is the heading</h1>
 <p>This is a cool way to start a coding journey</p>
+</article>
+<aside>
+    <p>placeholder to add comment thread later</p>
+</aside>
+</main>
+<footer>
+<p>Made by Trevor - <a href="https://www.linkedin.com/in/trevor-kipkemboi-7aaa63266?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYMjkfvsYQIaTdptfICtNMQ%3D%3D" target="_blank">here</a></p>  
+</footer>
 </body>
 </html>

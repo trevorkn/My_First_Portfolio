@@ -17,7 +17,38 @@
   color: #f0f0f0;             /* Light text for contrast */
   font-family: 'Segoe UI', sans-serif;
 }
+.nav-list {
+  position: fixed;       /* Fix position relative to viewport */
+  top: 20px;             /* 20px from the top */
+  right: 20px;           /* 20px from the right */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+  /* optional: to align vertically center if needed */
+  align-items: center;
+  background: transparent; /* no background */
+  z-index: 1000;          /* make sure it stays on top */
+}
 
+ 
+.nav-button {
+  display: inline-block;
+  background-color: #333;
+  color: #f0f0f0;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font font-weight: 600;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.3s ease;
+
+}
+
+.nav-button:hover {
+  background-color: #555;
+}
 .icon-row {
   display: flex;
   justify-content: center;
@@ -43,6 +74,16 @@ figcaption {
 </head>
 
     <body>
+      <header>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-button">Home</a></li>
+          <li><a href="base_index.html" class="nav-button">Base Page</a></li>
+          <li><a href="tweets.html" class="nav-button">Tweet</a></li>
+        </ul>
+      </nav></header>
+      <main>
+      <article>
        <h1>Trevor's coding journey</h1>
        <h2>HTML and css journey</h2>
            <p>This is a cool way to start a coding journey</p>
@@ -58,6 +99,11 @@ figcaption {
             <figcaption>Thankyou for your attention!. Any Question?.</figcaption>
              </a>
        </figure>
+      </article>
+      <aside>
+        <p>placeholder to add comment thread later</p>
+      </aside>
+      </main>
        <footer>
         <div class="icon-row">
         <a href="https://www.linkedin.com/in/trevor-kipkemboi-7aaa63266?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYMjkfvsYQIaTdptfICtNMQ%3D%3D" target="_blank">
@@ -80,6 +126,7 @@ figcaption {
       </dotlottie-player>
       </a>
        </div>
+       <p>Made by Trevor - <a href="https://www.linkedin.com/in/trevor-kipkemboi-7aaa63266?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYMjkfvsYQIaTdptfICtNMQ%3D%3D" target="_blank">here</a></p>
        </footer>
       
        <script

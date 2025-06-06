@@ -7,7 +7,7 @@
 <title>MyFirstPortfolio</title>
 <style>
 .nav-button {
-  position: fixed;
+  display: block;
   top: 20px;
   right: 20px;
   background-color: #333;
@@ -16,14 +16,46 @@
   border: none;
   border-radius: 5px;
   text-decoration: none;
+  text-align: center;
+}
+.nav-list {
+  position: fixed;       /* Fix position relative to viewport */
+  top: 20px;             /* 20px from the top */
+  right: 20px;           /* 20px from the right */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+  /* optional: to align vertically center if needed */
+  align-items: center;
+  background: transparent; /* no background */
+  z-index: 1000;          /* make sure it stays on top */
 }
 
+.nav-list li {
+  margin-bottom: 10px;
+}
+ .nav-button:hover {
+  background-color: #555;
+ }
+
+ 
 </style>
 </head>
 <body>
 <header>
-<a href="index.html" class="nav-button">Home</a>
+  <nav>
+    <ul class="nav-list">
+
+     <li> <a href="index.html" class="nav-button">Home</a></li>
+     <li><a href="tweets.html" class="nav-button">Tweet</a></li>
+     <li> <a href="base_index.html" class="nav-button">Base Page</a></li>     
+</ul>
+</nav>
 </header>
+<main>
+<article>
 <h1>This is the heading</h1>
 <p>This is a cool way to start a coding journey</p>
 
@@ -41,6 +73,15 @@ I’m building my dream one skill at a time — to design, code, and create solu
  
   <a href="https://twitter.com/KipkemboiT47855/status/1919955127286338038?ref_src=twsrc%5Etfw">May 7, 2025</a>
 </blockquote>
+</article>
+<aside>
+  <p>placeholder to add comment thread later.</p>
+</aside>
+</main>
+<footer>
+  <p>Made by Trevor - <a href="https://www.linkedin.com/in/trevor-kipkemboi-7aaa63266?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYMjkfvsYQIaTdptfICtNMQ%3D%3D" target="_blank">here</a></p>
+</footer>
  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 </body>
 </html>
