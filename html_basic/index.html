@@ -69,6 +69,28 @@ figcaption {
   text-align: center;
   font-style: italic;
 }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  color: #f0f0f0;
+}
+
+th, td {
+  border: 1px solid #888;
+  padding: 10px;
+  text-align: left;
+}
+thead {
+  background color: #222;
+}
+tbody tr:nth-child(odd) {
+  background color: #1a1a1a;
+}
+tbody tr:nth-child(even) {
+  background-color: #2a2a2a;
+}
+
  
 </style>
 </head>
@@ -98,6 +120,40 @@ figcaption {
             <figcaption>Thankyou for your attention!. Any Question?.</figcaption>
              </a>
        </figure>
+       <div class="learners-table">
+        <h2>Meet some learners.</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>country</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>25</td>
+              <td>USA</td>
+            </tr>
+            <tr>
+             <td>Emily</td>
+             <td>28</td>
+             <td>Canada</td>
+            </tr>
+            <tr>
+              <td>Michael</td>
+              <td>32</td>
+              <td>Australia</td>
+            </tr>
+            <tr>
+              <td>Sophia</td>
+              <td>21</td>
+              <td>UK</td>
+            </tr>
+          </tbody>
+        </table>
+       </div>
       </article>
       <aside>
         <p>placeholder to add comment thread later</p>
