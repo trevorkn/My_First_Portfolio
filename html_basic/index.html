@@ -4,7 +4,42 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MyFirstPortfolio</title>
+<style>
+  body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 50px;
+  max-width: 900px;
+  box-sizing: border-box;
+  background-color: #121212;  /* Dark background */
+  color: #f0f0f0;             /* Light text for contrast */
+  font-family: 'Segoe UI', sans-serif;
+}
 
+.icon-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+h1, h2, h3, h4 {
+  color: #ffffff; /* Ensure headings stand out */
+}
+
+a {
+  text-decoration: none;
+}
+
+figcaption {
+  color: #cccccc;
+  text-align: center;
+  font-style: italic;
+}
+ 
+</style>
 </head>
 
     <body>
@@ -16,12 +51,42 @@
          <p>Headings are enclosed in a h tag while paragraphs are enclosed in a p tag</p>
          <p>The journey is hard and time consuming but it will be worth it at the end.</p>
        <h4>Contact me</h4>
-          <p>To reach me just light a fire or something, or hit some drums in ululation an i'll be there</p>
+          <p>To reach me just light a fire or something, or hit some drums in ululation and i'll be there</p>
        <figure>
               <a href="https://au.pinterest.com/pin/18366310975335380/">
-            <img src="https://m.imdb.com/title/tt1911658/mediaviewer/rm3273310464/?ref_=ttmi_mi_6" width="600" height="380" alt="Thankyou for your attention. Any question?.">
+            <img src="/Thankyouforattention.jpeg" width="600" height="380" alt="Thankyou for your attention. Any question?.">
             <figcaption>Thankyou for your attention!. Any Question?.</figcaption>
              </a>
        </figure>
+       <footer>
+        <div class="icon-row">
+        <a href="https://www.linkedin.com/in/trevor-kipkemboi-7aaa63266?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYMjkfvsYQIaTdptfICtNMQ%3D%3D" target="_blank">
+        <dotlottie-player
+        src="https://lottie.host/f8c80680-7887-4150-8be6-e093b4d9f454/TwbqaGvli6.lottie"
+        background="transparent"
+        speed="1"
+        style="width: 50px; height: 50px"
+        loop
+        autoplay>light a fire</dotlottie-player>
+       </a>
+       <a href="https://github.com/trevorkn" target="_blank">
+       <dotlottie-player
+       src="https://lottie.host/46631d9a-be0a-469d-b60b-979ddbc73d41/KzoQ8yYqLl.lottie"
+       background="transparent"
+       speed="1"
+       style="width: 50px; height: 50px"
+       loop
+       autoplay>
+      </dotlottie-player>
+      </a>
+       </div>
+       </footer>
+      
+       <script
+       src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+       type="module"
+       ></script>
+    
+
 </body>
 </html>
